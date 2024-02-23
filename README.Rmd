@@ -38,13 +38,21 @@ library(feowR)
 feow_sf <- read_feow()
 ```
 
-
 Now let's plot it!
 
-```{r}
+```{r, dpi=600}
 library(ggplot2)
 
 ggplot(data = feow_sf)+
   geom_sf()
+```
+
+Look the Freshwater Ecoregions of South America!
+
+```{r, dpi = 600}
+ggplot(data = feow_sf)+
+  geom_sf()+
+  coord_sf(xlim = c(-80, -35),
+           ylim = c(10,-55))
 ```
 

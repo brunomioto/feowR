@@ -37,3 +37,14 @@ ggplot(data = feow_sf)+
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
+Look the Freshwater Ecoregions of South America!
+
+``` r
+ggplot(data = feow_sf)+
+  geom_sf()+
+  coord_sf(xlim = c(-80, -35),
+           ylim = c(10,-55))
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
