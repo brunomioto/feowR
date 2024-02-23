@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# feowR
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of **feowR** is to download shapefiles of Freshwater Ecoregions of the World (FEOW) inside R
+
+## Installation
+
+You can install the development version of feowR from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("brunomioto/feowR")
+```
+
+## Example
+
+
+```{r example}
+library(feowR)
+
+feow_sf <- read_feow()
+```
+
+
+Now let's plot it!
+
+```{r}
+library(ggplot2)
+
+ggplot(data = feow_sf)+
+  geom_sf()
+```
+
