@@ -4,6 +4,9 @@
 # feowR
 
 <!-- badges: start -->
+
+[![Codecov test
+coverage](https://codecov.io/gh/brunomioto/feowR/branch/master/graph/badge.svg)](https://app.codecov.io/gh/brunomioto/feowR?branch=master)
 <!-- badges: end -->
 
 The goal of **feowR** is to download shapefiles of Freshwater Ecoregions
