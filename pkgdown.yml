@@ -1,8 +1,8 @@
-pandoc: 2.19.2
-pkgdown: 2.0.7
+pandoc: 3.1.11
+pkgdown: 2.0.9
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-02-23T21:00Z
+last_built: 2024-06-21T13:44Z
 urls:
   reference: https://brunomioto.github.io/feowR/reference
   article: https://brunomioto.github.io/feowR/articles
