@@ -1,10 +1,14 @@
 Package: feowR
-Title: Download shapefiles of Freshwater Ecoregions of the World (FEOW) inside R
-Description: This package facilitates the manipulation, exploration, and mapping of freshwater biodiversity and ecosystem data. It includes functions to access pre-defined datasets and work with spatial data using 'sf'.
+Title: Download shapefiles of Freshwater Ecoregions of the World (FEOW)
+Description: Get access to all shapefiles from Freshwater Ecoregions of the World (FEOW) and a list with IDs and names.
 Version: 0.0.0.9000
 Authors@R: 
-    person("Bruno", "Mioto", , "brunomioto97@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    c(person(given = "Bruno",
+             family = "Mioto",
+             role = c("aut", "cre"),
+             email = "brunomioto97@gmail.com"),
+      person(given = "The Nature Conservancy and World Wildlife Fund, Inc",
+             role = "cph"))
 License: CC BY 4.0 + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

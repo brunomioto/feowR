@@ -7,7 +7,7 @@ This function downloads and reads the FEOW HydroSheds data from the
 \code{brunomioto/feowR} repository. It returns a spatial data frame containing
 the FEOW HydroSheds catchment polygons.}
 \usage{
-read_feow()
+read_feow(overwrite = FALSE)
 }
 \value{
 A spatial data frame containing the FEOW HydroSheds catchment polygons.

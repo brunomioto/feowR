@@ -9,18 +9,23 @@
 
 #' @examples
 #' feow_data <- read_feow()
-read_feow <- function() {
+read_feow <- function(overwrite = FALSE) {
 
   temp <- base::tempdir()
   temp2 <- base::tempfile()
 
   piggyback::pb_download("feow_hydrosheds.zip",
              repo = "brunomioto/feowR",
-             dest = temp)
+             dest = temp,
+             overwrite = overwrite)
 
   utils::unzip(zipfile = paste0(temp,"/feow_hydrosheds.zip"),
         exdir = temp2)
 
-  sf::read_sf(temp2)
+  sf_file <- sf::read_sf(temp2)
+
+  sf::st_crs(sf_file)  <-  4326
+
+  return(sf_file)
 
 }
