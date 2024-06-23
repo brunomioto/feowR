@@ -16,7 +16,15 @@
 read_feow <- function(overwrite = FALSE) {
 
   #check internet connection
-  if(!RCurl::url.exists("https://github.com/brunomioto/feowR")){
+  test_internet <- function(url){
+
+    website <- httr::GET(url)
+
+    return(website$status_code)
+
+  }
+
+  if(test_internet("https://github.com/brunomioto/feowR") != 200){
     cli::cli_abort("Check your internet connection")
   }
 
@@ -24,12 +32,12 @@ read_feow <- function(overwrite = FALSE) {
   temp2 <- base::tempfile()
 
   piggyback::pb_download("feow_hydrosheds.zip",
-             repo = "brunomioto/feowR",
-             dest = temp,
-             overwrite = overwrite)
+                         repo = "brunomioto/feowR",
+                         dest = temp,
+                         overwrite = overwrite)
 
   utils::unzip(zipfile = paste0(temp,"/feow_hydrosheds.zip"),
-        exdir = temp2)
+               exdir = temp2)
 
   sf_file <- sf::read_sf(temp2)
 

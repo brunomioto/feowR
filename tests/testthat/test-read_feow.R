@@ -1,22 +1,30 @@
 test_that("Internet connection is available", {
-  expect_true(RCurl::url.exists("https://github.com/brunomioto/feowR"))
+
+  test_internet <- function(url){
+
+    website <- httr::GET(url)
+
+    return(website$status_code)
+
+  }
+
+  expect_equal(test_internet("https://github.com/brunomioto/feowR"), 200)
+
 })
 
 test_that("Function read_feow works correctly with internet", {
 
-  skip_if_not(RCurl::url.exists("https://github.com/brunomioto/feowR"),
-              message = "No internet connection to test read_feow function")
-
   result <- read_feow()
   expect_s3_class(result, "sf")
   expect_true(nrow(result) > 0)
+
 })
 
 # url.exists <- NULL
 # test_that("Function read_feow fails without internet", {
 #   local_mocked_bindings(
 #     # url.exists <- NULL
-#     url.exists = function(url) FALSE
+#     test_internet = function(url) 404
 #   )
 #    expect_error(read_feow())
 #
