@@ -63,17 +63,3 @@ ecoregions_list
 #> 10   110 Nearctic Temperate coastal rivers                 Southern Hudson Bay  
 #> # ℹ 416 more rows
 ```
-
-Look the Freshwater Ecoregions of Neotropical region!
-
-``` r
-library(dplyr)
-
-feow_sf |>
-  left_join(ecoregions_list, by = join_by("FEOW_ID" == "id")) |>
-  filter(realm == "Neotropic") |>
-  ggplot()+
-  geom_sf()
-```
-
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />

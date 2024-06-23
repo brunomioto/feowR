@@ -55,15 +55,4 @@ We can see the list of all ecoregions, from [FEOW website](https://www.feow.org/
 ecoregions_list
 ```
 
-Look the Freshwater Ecoregions of Neotropical region!
-
-```{r, dpi = 600, warning=FALSE, message=FALSE}
-library(dplyr)
-
-feow_sf |>
-  left_join(ecoregions_list, by = join_by("FEOW_ID" == "id")) |>
-  filter(realm == "Neotropic") |>
-  ggplot()+
-  geom_sf()
-```
 

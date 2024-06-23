@@ -1,0 +1,373 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "feowR",
+  "description": "Get access to all shapefiles from Freshwater Ecoregions of the World (FEOW) and a list with IDs and names.",
+  "name": "feowR: Download shapefiles of Freshwater Ecoregions of the World (FEOW)",
+  "relatedLink": "https://brunomioto.github.io/feowR/",
+  "codeRepository": "https://github.com/brunomioto/feowR",
+  "issueTracker": "https://github.com/brunomioto/feowR/issues",
+  "license": "https://spdx.org/licenses/CC-BY-4.0",
+  "version": "0.0.0.9000",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "url": "https://r-project.org"
+  },
+  "runtimePlatform": "R version 4.3.2 (2023-10-31 ucrt)",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Bruno",
+      "familyName": "Mioto",
+      "email": "brunomioto97@gmail.com"
+    }
+  ],
+  "copyrightHolder": [
+    {
+      "@type": "Organization",
+      "name": "The Nature Conservancy and World Wildlife Fund, Inc"
+    }
+  ],
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Bruno",
+      "familyName": "Mioto",
+      "email": "brunomioto97@gmail.com"
+    }
+  ],
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "testthat",
+      "name": "testthat",
+      "version": ">= 3.0.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=testthat"
+    }
+  ],
+  "softwareRequirements": {
+    "1": {
+      "@type": "SoftwareApplication",
+      "identifier": "cli",
+      "name": "cli",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=cli"
+    },
+    "2": {
+      "@type": "SoftwareApplication",
+      "identifier": "piggyback",
+      "name": "piggyback",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=piggyback"
+    },
+    "3": {
+      "@type": "SoftwareApplication",
+      "identifier": "RCurl",
+      "name": "RCurl",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=RCurl"
+    },
+    "4": {
+      "@type": "SoftwareApplication",
+      "identifier": "sf",
+      "name": "sf",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=sf"
+    },
+    "5": {
+      "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": ">= 2.10"
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "642.126KB",
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "datePublished": "2008",
+      "author": [
+        {
+          "@type": "Organization",
+          "name": "Abell"
+        },
+        {
+          "@type": "Organization",
+          "name": "Robin"
+        },
+        {
+          "@type": "Organization",
+          "name": "Thieme"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Michele",
+          "familyName": "L."
+        },
+        {
+          "@type": "Organization",
+          "name": "Revenga"
+        },
+        {
+          "@type": "Organization",
+          "name": "Carmen"
+        },
+        {
+          "@type": "Organization",
+          "name": "Bryer"
+        },
+        {
+          "@type": "Organization",
+          "name": "Mark"
+        },
+        {
+          "@type": "Organization",
+          "name": "Kottelat"
+        },
+        {
+          "@type": "Organization",
+          "name": "Maurice"
+        },
+        {
+          "@type": "Organization",
+          "name": "Bogutskaya"
+        },
+        {
+          "@type": "Organization",
+          "name": "Nina"
+        },
+        {
+          "@type": "Organization",
+          "name": "Coad"
+        },
+        {
+          "@type": "Organization",
+          "name": "Brian"
+        },
+        {
+          "@type": "Organization",
+          "name": "Mandrak"
+        },
+        {
+          "@type": "Organization",
+          "name": "Nick"
+        },
+        {
+          "@type": "Organization",
+          "name": "Balderas"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Salvador",
+          "familyName": "Contreras"
+        },
+        {
+          "@type": "Organization",
+          "name": "Bussing"
+        },
+        {
+          "@type": "Organization",
+          "name": "William"
+        },
+        {
+          "@type": "Organization",
+          "name": "Stiassny"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Melanie",
+          "familyName": "L.J."
+        },
+        {
+          "@type": "Organization",
+          "name": "Skelton"
+        },
+        {
+          "@type": "Organization",
+          "name": "Paul"
+        },
+        {
+          "@type": "Organization",
+          "name": "Allen"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Gerald",
+          "familyName": "R."
+        },
+        {
+          "@type": "Organization",
+          "name": "Unmack"
+        },
+        {
+          "@type": "Organization",
+          "name": "Peter"
+        },
+        {
+          "@type": "Organization",
+          "name": "Naseka"
+        },
+        {
+          "@type": "Organization",
+          "name": "Alexander"
+        },
+        {
+          "@type": "Organization",
+          "name": "Ng"
+        },
+        {
+          "@type": "Organization",
+          "name": "Rebecca"
+        },
+        {
+          "@type": "Organization",
+          "name": "Sindorf"
+        },
+        {
+          "@type": "Organization",
+          "name": "Nikolai"
+        },
+        {
+          "@type": "Organization",
+          "name": "Robertson"
+        },
+        {
+          "@type": "Organization",
+          "name": "James"
+        },
+        {
+          "@type": "Organization",
+          "name": "Armijo"
+        },
+        {
+          "@type": "Organization",
+          "name": "Eric"
+        },
+        {
+          "@type": "Organization",
+          "name": "Higgins"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Jonathan",
+          "familyName": "V."
+        },
+        {
+          "@type": "Organization",
+          "name": "Heibel"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Thomas",
+          "familyName": "J."
+        },
+        {
+          "@type": "Organization",
+          "name": "Wikramanayake"
+        },
+        {
+          "@type": "Organization",
+          "name": "Eric"
+        },
+        {
+          "@type": "Organization",
+          "name": "Olson"
+        },
+        {
+          "@type": "Organization",
+          "name": "David"
+        },
+        {
+          "@type": "Organization",
+          "name": "López"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Hugo",
+          "familyName": "L."
+        },
+        {
+          "@type": "Organization",
+          "name": "Reis"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Roberto",
+          "familyName": "E."
+        },
+        {
+          "@type": "Organization",
+          "name": "Lundberg"
+        },
+        {
+          "@type": "Person",
+          "givenName": "John",
+          "familyName": "G."
+        },
+        {
+          "@type": "Person",
+          "givenName": "Sabaj",
+          "familyName": "Pérez"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Mark",
+          "familyName": "H."
+        },
+        {
+          "@type": "Organization",
+          "name": "Petry"
+        },
+        {
+          "@type": "Organization",
+          "name": "Paulo"
+        }
+      ],
+      "name": "Freshwater ecoregions of the world: A new map of biogeographic units for freshwater biodiversity conservation",
+      "identifier": "10.1641/B580507",
+      "pagination": "403--414",
+      "@id": "https://doi.org/10.1641/B580507",
+      "sameAs": "https://doi.org/10.1641/B580507",
+      "isPartOf": {
+        "@type": "PublicationIssue",
+        "issueNumber": "5",
+        "datePublished": "2008",
+        "isPartOf": {
+          "@type": ["PublicationVolume", "Periodical"],
+          "volumeNumber": "58",
+          "name": "BioScience"
+        }
+      }
+    }
+  ],
+  "readme": "https://github.com/brunomioto/feowR/blob/master/README.md",
+  "contIntegration": ["https://app.codecov.io/gh/brunomioto/feowR?branch=master", "https://github.com/brunomioto/feowR/actions/workflows/R-CMD-check.yaml"]
+}

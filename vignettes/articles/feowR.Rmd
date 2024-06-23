@@ -1,0 +1,47 @@
+---
+title: "feowR"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This package makes easier to work with Freshwater Ecoregions of the World (FEOW) data, as it downloads and loads the shapefile files to the working directory.
+
+We can start loading the package and using its main function, `read_feow()`
+
+```{r setup}
+library(feowR)
+
+feow_sf <- read_feow()
+```
+
+Then we can see that the packages has a list of all ecoregions provided
+
+```{r}
+ecoregions_list
+```
+
+Now that we have the shapefile and the list of all ecoregions, we can select one big region (called *realm*) to study.
+
+Let's take a look at the Freshwater Ecoregions of Neotropical region!
+
+We just have to join our datasets and filter the `realm == "Neotropical"`, then we can plot it!
+
+```{r, dpi = 600, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+
+feow_sf |>
+  left_join(ecoregions_list, by = join_by("FEOW_ID" == "id")) |>
+  filter(realm == "Neotropic") |>
+  ggplot()+
+  geom_sf()
+```
+
+
+
+
