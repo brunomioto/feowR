@@ -15,6 +15,11 @@
 #' feow_data <- read_feow()
 read_feow <- function(overwrite = FALSE) {
 
+  #check internet connection
+  if(!RCurl::url.exists("https://github.com/brunomioto/feowR")){
+    cli::cli_abort("Check your internet connection")
+  }
+
   temp <- base::tempdir()
   temp2 <- base::tempfile()
 
