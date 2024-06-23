@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# feowR
+# feowR <a href="https://brunomioto.github.io/feowR/"><img src="man/figures/logo.png" align="right" width="25%" min-width="120px" alt="feowR website" /></a>
 
 <!-- badges: start -->
 

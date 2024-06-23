@@ -2,22 +2,23 @@
 % Please edit documentation in R/read_feow.R
 \name{read_feow}
 \alias{read_feow}
-\title{Read FEOW HydroSheds data
-This function downloads and reads the FEOW HydroSheds data from the
-\code{brunomioto/feowR} repository. It returns a spatial data frame containing
-the FEOW HydroSheds catchment polygons.}
+\title{Read FEOW HydroSheds data}
+\source{
+https://www.feow.org/ecoregions/list
+}
 \usage{
 read_feow(overwrite = FALSE)
 }
 \value{
-A spatial data frame containing the FEOW HydroSheds catchment polygons.
+A spatial data frame containing the FEOW ecoregions polygons.
 }
 \description{
-Read FEOW HydroSheds data
-This function downloads and reads the FEOW HydroSheds data from the
-\code{brunomioto/feowR} repository. It returns a spatial data frame containing
-the FEOW HydroSheds catchment polygons.
+This function downloads and reads the FEOW ecoregions data from the
+\code{brunomioto/feowR} repository.
 }
 \examples{
 feow_data <- read_feow()
+}
+\author{
+The Nature Conservancy and World Wildlife Fund, Inc.
 }

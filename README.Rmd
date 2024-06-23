@@ -13,7 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-# feowR
+# feowR <a href="https://brunomioto.github.io/feowR/"><img src="man/figures/logo.png" align="right" width="25%" min-width="120px" alt="feowR website" /></a>
+
 
 <!-- badges: start -->
 [![Codecov test coverage](https://codecov.io/gh/brunomioto/feowR/branch/master/graph/badge.svg)](https://app.codecov.io/gh/brunomioto/feowR?branch=master)

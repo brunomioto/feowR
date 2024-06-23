@@ -1,12 +1,14 @@
 #' Read FEOW HydroSheds data
-
-#' This function downloads and reads the FEOW HydroSheds data from the
-#' `brunomioto/feowR` repository. It returns a spatial data frame containing
-#' the FEOW HydroSheds catchment polygons.
-
-#' @return A spatial data frame containing the FEOW HydroSheds catchment polygons.
+#'
+#' This function downloads and reads the FEOW ecoregions data from the
+#' `brunomioto/feowR` repository.
+#'
+#' @author The Nature Conservancy and World Wildlife Fund, Inc.
+#' @source https://www.feow.org/ecoregions/list
+#'
+#' @return A spatial data frame containing the FEOW ecoregions polygons.
 #' @export
-
+#'
 #' @examples
 #' feow_data <- read_feow()
 read_feow <- function(overwrite = FALSE) {
