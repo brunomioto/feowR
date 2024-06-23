@@ -6,6 +6,8 @@
 #' @author The Nature Conservancy and World Wildlife Fund, Inc.
 #' @source https://www.feow.org/ecoregions/list
 #'
+#' @param overwrite Logical (default `FALSE`). If TRUE, any existing file will be overwritten.
+#'
 #' @return A spatial data frame containing the FEOW ecoregions polygons.
 #' @export
 #'

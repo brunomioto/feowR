@@ -11,7 +11,7 @@ coverage](https://codecov.io/gh/brunomioto/feowR/branch/master/graph/badge.svg)]
 <!-- badges: end -->
 
 **feowR** provides a faster and secure way to download shapefiles of
-Freshwater Ecoregions of the World (FEOW) using
+[Freshwater Ecoregions of the World (FEOW)](https://feow.org) using
 [piggyback](https://docs.ropensci.org/piggyback/index.html) R package.
 
 ## Installation

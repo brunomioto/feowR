@@ -9,6 +9,9 @@ https://www.feow.org/ecoregions/list
 \usage{
 read_feow(overwrite = FALSE)
 }
+\arguments{
+\item{overwrite}{Logical (default \code{FALSE}). If TRUE, any existing file will be overwritten.}
+}
 \value{
 A spatial data frame containing the FEOW ecoregions polygons.
 }

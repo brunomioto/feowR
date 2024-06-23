@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/brunomioto/feowR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/brunomioto/feowR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-**feowR** provides a faster and secure way to download shapefiles of Freshwater Ecoregions of the World (FEOW) using [piggyback](https://docs.ropensci.org/piggyback/index.html) R package.
+**feowR** provides a faster and secure way to download shapefiles of [Freshwater Ecoregions of the World (FEOW)](https://feow.org) using [piggyback](https://docs.ropensci.org/piggyback/index.html) R package.
 
 ## Installation
 
