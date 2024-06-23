@@ -7,10 +7,12 @@
 
 [![Codecov test
 coverage](https://codecov.io/gh/brunomioto/feowR/branch/master/graph/badge.svg)](https://app.codecov.io/gh/brunomioto/feowR?branch=master)
+[![R-CMD-check](https://github.com/brunomioto/feowR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/brunomioto/feowR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of **feowR** is to download shapefiles of Freshwater Ecoregions
-of the World (FEOW) inside R
+**feowR** provides a faster and secure way to download shapefiles of
+Freshwater Ecoregions of the World (FEOW) using
+[piggyback](https://docs.ropensci.org/piggyback/index.html) R package.
 
 ## Installation
 
