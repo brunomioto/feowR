@@ -3,7 +3,7 @@ pkgdown: 2.0.9
 pkgdown_sha: ~
 articles:
   feowR: feowR.html
-last_built: 2024-06-24T17:47Z
+last_built: 2024-06-24T20:05Z
 urls:
   reference: https://brunomioto.github.io/feowR/reference
   article: https://brunomioto.github.io/feowR/articles
