@@ -15,17 +15,8 @@
 #' feow_data <- read_feow()
 read_feow <- function(overwrite = FALSE) {
 
-  #check internet connection
-  test_internet <- function(url){
-
-    website <- httr::GET(url)
-
-    return(website$status_code)
-
-  }
-
-  if(test_internet("https://github.com/brunomioto/feowR") != 200){
-    cli::cli_abort("Check your internet connection")
+  if(is_internet_down()) {
+    return(cli::cli_alert_info("Check your internet connection"))
   }
 
   temp <- base::tempdir()
@@ -44,5 +35,13 @@ read_feow <- function(overwrite = FALSE) {
   sf::st_crs(sf_file)  <-  4326
 
   return(sf_file)
+}
 
+
+#' Check internet connection
+#'
+#' @noRd
+#'
+is_internet_down <- function() {
+  !curl::has_internet()
 }
