@@ -8,6 +8,5 @@
 
 library(testthat)
 library(feowR)
-library(curl)
 
 test_check("feowR")
